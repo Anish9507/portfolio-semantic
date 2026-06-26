@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO-friendly Meta Tags -->
+  <meta name="description" content="Send a message to Anish. Get in touch for software projects, consulting, or general developer questions.">
+  <meta name="keywords" content="contact Anish, email form, personal portfolio contact, web developer inquiries">
+  <meta name="author" content="Anish">
+  <title>Contact | Anish's Personal Portfolio</title>
+  <!-- Basic Stylesheet Link -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header with Global Navigation -->
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo" aria-label="Anish's Portfolio Home">Anish's Portfolio</a>
+      <nav aria-label="Global Navigation">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="projects.html">Projects</a></li>
+          <li class="nav-item"><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="main-content" tabindex="-1">
+    
+    <section aria-labelledby="contact-heading">
+      <h1 id="contact-heading">Contact Me</h1>
+      <p>
+        If you have any questions or just want to connect, please fill out the form below. I will get back to you as soon as possible.
+      </p>
+
+      <!-- Accessible Form, utilizing browser validation -->
+      <form action="#" method="POST" aria-label="Contact Form">
+        
+        <p>All fields are required.</p>
+
+        <!-- Full Name Group -->
+        <div class="form-group">
+          <label for="full-name">Full Name</label>
+          <input 
+            type="text" 
+            id="full-name" 
+            name="name" 
+            required 
+            aria-required="true"
+            autocomplete="name"
+          >
+        </div>
+
+        <!-- Email Group -->
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            required 
+            aria-required="true"
+            autocomplete="email"
+          >
+        </div>
+
+        <!-- Subject Group -->
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input 
+            type="text" 
+            id="subject" 
+            name="subject" 
+            required 
+            aria-required="true"
+          >
+        </div>
+
+        <!-- Message Group -->
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea 
+            id="message" 
+            name="message" 
+            rows="6" 
+            required 
+            aria-required="true"
+          ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">Submit</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2026 Anish. All rights reserved. Created for Internship Task 1.</p>
+      <div class="footer-socials" aria-label="Social Profiles">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          GitHub <span class="sr-only">(opens in a new tab)</span>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          LinkedIn <span class="sr-only">(opens in a new tab)</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
